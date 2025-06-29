@@ -1,0 +1,6 @@
+WorkerID,WorkerName,Skills,AvailableSlots,MaxLoadPerPhase,WorkerGroup,QualificationLevel
+W1,Alice,DataEntry,"[1,2,3,4]",3,TierA,Senior
+W2,Bob,"DataEntry,QA","[2,3,5]",2,TierA,Junior
+W3,Charlie,QA,"[1,4,5]",3,TierB,Senior
+W4,David,"DataEntry,Analysis","[1,2,3]",2,TierB,Mid
+W5,Eva,"QA,Management","[2,3,4]",2,TierC,Mid

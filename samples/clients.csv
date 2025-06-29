@@ -1,0 +1,6 @@
+ClientID,ClientName,PriorityLevel,RequestedTaskIDs,GroupTag,AttributesJSON
+C1,Alpha Corp,3,T1,TierA,"{""region"":""East""}"
+C2,Beta LLC,5,T1,TierB,"{""region"":""West""}"
+C3,Delta Inc,2,T2,TierA,"{""region"":""North""}"
+C4,Echo Ltd,4,T3,TierC,"{""region"":""South""}"
+C5,Zeta Group,1,T1,TierA,"{""notes"":""VIP client""}"
