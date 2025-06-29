@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import React, { useState } from 'react';
 
@@ -22,7 +23,7 @@ export default function NLRuleInput({ onRule }: { onRule: (r: any) => void }) {
       } else {
         setError(data.error || 'Failed to convert.');
       }
-    } catch (err) {
+    } catch {
       setError('Conversion failed.');
     } finally {
       setLoading(false);

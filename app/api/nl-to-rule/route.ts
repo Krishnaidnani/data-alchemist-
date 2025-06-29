@@ -29,10 +29,13 @@ Only return the JSON object, no explanation or markdown formatting.
   try {
     const parsed = JSON.parse(clean);
     return NextResponse.json({ rule: parsed });
-  } catch (err) {
-    return NextResponse.json(
-      { error: 'Could not parse rule' },
-      { status: 400 }
-    );
+
+  }  catch (err) {
+  console.error('Parsing failed:', err);
+  return NextResponse.json(
+    { error: 'Could not parse rule' },
+    { status: 400 }
+  );
+
   }
 }

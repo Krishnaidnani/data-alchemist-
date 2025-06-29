@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type ValidationError = {
   entity: 'clients' | 'tasks' | 'workers';
   rowIndex: number;
@@ -13,6 +14,7 @@ export function validateAll(
   const errors: ValidationError[] = [];
 
   const taskIDs = new Set(tasks.map((t) => t.TaskID));
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const workerIDs = new Set(workers.map((w) => w.WorkerID));
   const allSkills = new Set(
     workers.flatMap(

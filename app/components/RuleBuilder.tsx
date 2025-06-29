@@ -1,10 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 'use client';
 
 import React, { useState } from 'react';
 import { saveAs } from 'file-saver';
 import NLRuleInput from './NLRuleInput';
 const RULE_TYPES = ['coRun', 'slotRestriction', 'loadLimit', 'phaseWindow'];
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function RuleBuilder({ tasks, workers, clients }: any) {
   const [rules, setRules] = useState<any[]>([]);
   const [type, setType] = useState('coRun');
